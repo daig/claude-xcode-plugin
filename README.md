@@ -1,6 +1,21 @@
 # Claude Xcode Plugin
 
-Claude Code skill plugin for working with Xcode MCP tools and SwiftUI macOS projects.
+Claude Code plugin that bundles Apple's official Xcode MCP server with best-practice skills for SwiftUI macOS projects.
+
+Installing this plugin automatically connects Claude Code to Xcode — no manual `claude mcp add` needed.
+
+## Prerequisites
+
+1. **Xcode** must be installed (26.0+)
+
+2. **xcode-select** must point to your Xcode installation:
+   ```
+   sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+   ```
+
+3. **Enable MCP in Xcode settings:**
+   - Open Xcode > Settings > Intelligence
+   - Under Model Context Protocol, toggle **Xcode Tools** on
 
 ## Installation
 
@@ -9,13 +24,17 @@ Claude Code skill plugin for working with Xcode MCP tools and SwiftUI macOS proj
 /plugin install xcode-mcp@dai-claude-marketplace
 ```
 
-## Skills
+The Xcode MCP server (`xcrun mcpbridge`) starts automatically when the plugin is enabled.
 
-| Skill | Description |
-|-------|-------------|
-| **xcode-mcp** | Xcode MCP tool best practices, file operation tradeoffs, test target setup, XCUITest patterns |
+## What's Included
 
-## What's Covered
+### MCP Server
+
+The plugin bundles Apple's Xcode MCP server, providing 20 tools for building, testing, previewing, searching, and editing Xcode projects directly from Claude Code.
+
+### Skill: xcode-mcp
+
+Best practices learned from real-world usage of the Xcode MCP tools:
 
 - **When to use Xcode MCP vs filesystem tools** — decision table for every operation
 - **XcodeWrite file placement pitfall** — known issue where new files land at project root
