@@ -4,14 +4,9 @@ Claude Code skill plugin for working with Xcode MCP tools and SwiftUI macOS proj
 
 ## Installation
 
-Add the marketplace to your Claude Code settings, then enable the plugin:
-
-```json
-{
-  "plugins": [
-    "dai-claude-marketplace/xcode-mcp"
-  ]
-}
+```
+/plugin marketplace add daig/dai-claude-marketplace
+/plugin install xcode-mcp@dai-claude-marketplace
 ```
 
 ## Skills
