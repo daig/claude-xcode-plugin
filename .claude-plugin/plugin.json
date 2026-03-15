@@ -1,0 +1,22 @@
+{
+  "name": "xcode-mcp",
+  "version": "1.0.0",
+  "description": "Best practices for using Xcode MCP tools with SwiftUI macOS projects. Covers file operation tradeoffs, test target setup, XCUITest accessibility patterns, and build/test workflows.",
+  "author": {
+    "name": "Dai",
+    "url": "https://github.com/daig"
+  },
+  "repository": "https://github.com/daig/claude-xcode-plugin",
+  "license": "MIT",
+  "keywords": [
+    "xcode",
+    "mcp",
+    "swiftui",
+    "macos",
+    "xcuitest",
+    "testing",
+    "pbxproj",
+    "accessibility",
+    "swift"
+  ]
+}
